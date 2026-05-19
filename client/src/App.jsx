@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import Home from "./Pages/Home/Home";
 
 function App() {
 
@@ -6,7 +6,7 @@ function App() {
 
     <div>
 
-      <Navbar />
+      <Home />
 
     </div>
 
