@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar";
 import HomeHeroSection from "./HomeHeroSection";
 import FutureHomeSection from "./FutureHomeSection";
+import NeighborhoodsSectionHome from "./NeighborhoodsSectionHome";
 
 function Home() {
 
@@ -10,6 +11,7 @@ function Home() {
         <Navbar transparent={true} />
         <HomeHeroSection />
         <FutureHomeSection />
+        <NeighborhoodsSectionHome />
     </div>
 
   );
