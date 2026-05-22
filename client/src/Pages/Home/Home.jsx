@@ -2,6 +2,8 @@ import Navbar from "../../components/Navbar";
 import HomeHeroSection from "./HomeHeroSection";
 import FutureHomeSection from "./FutureHomeSection";
 import NeighborhoodsSectionHome from "./NeighborhoodsSectionHome";
+import TestimonialHome from "./TestimonialHome";
+import FeaturesShowcaseHome from "./FeaturesShowcaseHome";
 
 function Home() {
 
@@ -12,6 +14,8 @@ function Home() {
         <HomeHeroSection />
         <FutureHomeSection />
         <NeighborhoodsSectionHome />
+        <TestimonialHome />
+        <FeaturesShowcaseHome />
     </div>
 
   );

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const neighborhoodsDataHome = [
@@ -123,24 +122,34 @@ const NeighborhoodsSectionHome = () => {
           <div className="NeighborhoodsSectionHome-slider overflow-hidden">
 
             <div
-              className="NeighborhoodsSectionHome-track flex gap-8 duration-500"
+              className="NeighborhoodsSectionHome-track flex duration-500"
               style={{
-                transform: `translateX(calc(-${currentIndexHome} * (100% / 3)))`,
-                }}
+                transform: `translateX(-${
+                  window.innerWidth >= 900
+                    ? (currentIndexHome * 100) / 3
+                    : window.innerWidth >= 600
+                    ? (currentIndexHome * 100) / 2
+                    : currentIndexHome * 100
+                }%)`,
+              }}
             >
               {neighborhoodsDataHome.map((item) => (
                 <div
                   key={item.id}
-                  className="NeighborhoodsSectionHome-card w-1/3 flex-shrink-0 flex-shrink-0 group cursor-pointer"
+                  className="NeighborhoodsSectionHome-card w-full min-[600px]:w-1/2 min-[900px]:w-1/3 flex-shrink-0 group cursor-pointer px-4"
                 >
 
-                  <div className="NeighborhoodsSectionHome-imageWrapper overflow-hidden">
+                  <div className="NeighborhoodsSectionHome-imageWrapper relative overflow-hidden">
 
                     <img
                       src={item.image}
                       alt={item.title}
                       className="NeighborhoodsSectionHome-image w-full h-[340px] object-cover group-hover:scale-110 duration-500"
                     />
+
+                    <div className="NeighborhoodsSectionHome-propertyBadge absolute left-6 bottom-6 bg-black text-white text-sm font-semibold px-5 py-2 rounded-full opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                      2 PROPERTIES
+                    </div>
                   </div>
 
                   <div className="NeighborhoodsSectionHome-content">
