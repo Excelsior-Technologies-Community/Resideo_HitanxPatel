@@ -4,6 +4,7 @@ import FutureHomeSection from "./FutureHomeSection";
 import NeighborhoodsSectionHome from "./NeighborhoodsSectionHome";
 import TestimonialHome from "./TestimonialHome";
 import FeaturesShowcaseHome from "./FeaturesShowcaseHome";
+import Footer from "../../components/Footer";
 
 function Home() {
 
@@ -16,6 +17,7 @@ function Home() {
         <NeighborhoodsSectionHome />
         <TestimonialHome />
         <FeaturesShowcaseHome />
+        <Footer />
     </div>
 
   );
