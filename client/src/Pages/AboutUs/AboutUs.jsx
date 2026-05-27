@@ -3,7 +3,8 @@ import AboutHeader from "./AboutHeader";
 import FeatureSectionAbout from "./FeatureSectionAbout";
 import AboutVideoHeroSection from "./AboutVideoHeroSection";
 import AboutStatusSection from "./AboutStatusSection";
-// import Footer from "../../components/Footer";
+import WhyChooseUsSectionAbout from "./WhyChooseUsSectionAbout";
+import Footer from "../../components/Footer";
 
 function AboutUs() {
 
@@ -15,7 +16,8 @@ function AboutUs() {
         <FeatureSectionAbout />
         <AboutVideoHeroSection />
         <AboutStatusSection />
-        {/* <Footer /> */}
+        <WhyChooseUsSectionAbout />
+        <Footer />
     </div>
 
   );

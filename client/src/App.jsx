@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
 import AboutUs from "./Pages/AboutUs/AboutUs";
+import Services from "./Pages/Services/Services";
 
 function NotFound() {
   return <h1>404 Page Not Found</h1>;
@@ -14,6 +15,8 @@ function App() {
       <Route path="/" element={<Home />} />
 
       <Route path="/about" element={<AboutUs />} />
+
+      <Route path="/services" element={<Services />} />
 
       <Route path="*" element={<NotFound />} />
 
