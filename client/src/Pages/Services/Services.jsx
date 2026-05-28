@@ -1,9 +1,6 @@
 import Navbar from "../../components/Navbar";
-// import AboutHeader from "./AboutHeader";
-// import FeatureSectionAbout from "./FeatureSectionAbout";
-// import AboutVideoHeroSection from "./AboutVideoHeroSection";
-// import AboutStatusSection from "./AboutStatusSection";
-// import WhyChooseUsSectionAbout from "./WhyChooseUsSectionAbout";
+import ServicesOverviewSection from "./ServicesOverviewSection";
+import WhyChooseUsSection from "./WhyChooseUsSection";
 // import Footer from "../../components/Footer";
 
 function AboutUs() {
@@ -12,11 +9,8 @@ function AboutUs() {
 
     <div>
         <Navbar/>
-        {/* <AboutHeader />
-        <FeatureSectionAbout />
-        <AboutVideoHeroSection />
-        <AboutStatusSection />
-        <WhyChooseUsSectionAbout /> */}
+        <ServicesOverviewSection />
+        <WhyChooseUsSection />
         {/* <Footer /> */}
     </div>
 
