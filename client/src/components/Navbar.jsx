@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar({ transparent }) {
   const [scroll, setScroll] = useState(false);
@@ -41,17 +42,21 @@ function Navbar({ transparent }) {
             </li>
 
             <li className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">
-                About Us
+                <Link to="/about">
+                    About Us
+                </Link>
             </li>
 
             <li className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">
-                Services
+                <Link to="/services">
+                    Services
+                </Link>
             </li>
 
             <li className="relative group">
 
             <span className="relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
-                Listings
+              Listings
             </span>
 
             <div className="absolute top-full pt-4 left-1/2 -translate-x-1/2 hidden group-hover:block z-10">
@@ -61,7 +66,9 @@ function Navbar({ transparent }) {
                 <ul className="flex flex-col gap-5 text-sm font-semibold">
 
                     <li className="hover:text-gray-400 cursor-pointer transition duration-300">
-                    All Properties
+                      <Link to="/listings">
+                        All Properties
+                      </Link>
                     </li>
 
                     <li className="hover:text-gray-400 cursor-pointer transition duration-300">

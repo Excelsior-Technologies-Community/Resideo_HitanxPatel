@@ -1,9 +1,10 @@
 import Navbar from "../../components/Navbar";
 import ServicesOverviewSection from "./ServicesOverviewSection";
 import WhyChooseUsSection from "./WhyChooseUsSection";
-// import Footer from "../../components/Footer";
+import ContactUsSectionServices from "./ContactUsSectionServices";
+import Footer from "../../components/Footer";
 
-function AboutUs() {
+function Services() {
 
   return (
 
@@ -11,10 +12,11 @@ function AboutUs() {
         <Navbar/>
         <ServicesOverviewSection />
         <WhyChooseUsSection />
-        {/* <Footer /> */}
+        <ContactUsSectionServices />
+        <Footer />
     </div>
 
   );
 }
 
-export default AboutUs;
+export default Services;
