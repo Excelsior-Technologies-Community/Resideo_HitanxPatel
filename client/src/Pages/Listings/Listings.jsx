@@ -7,18 +7,18 @@ import PropertySearchSectionListings from "./PropertySearchSectionListings";
 
 function Services() {
 
-  return (
+    return (
 
-    <div>
-        <Navbar/>
-        <PropertySearchSectionListings />
-        {/* <ServicesOverviewSection />
-        <WhyChooseUsSection />
-        <ContactUsSectionServices /> */}
-        {/* <Footer /> */}
-    </div>
+        <div>
+            <Navbar/>
+            <PropertySearchSectionListings />
+            {/* <ServicesOverviewSection />
+            <WhyChooseUsSection />
+            <ContactUsSectionServices /> */}
+            {/* <Footer /> */}
+        </div>
 
-  );
+    );
 }
 
 export default Services;
